@@ -1,4 +1,4 @@
-//@include aoa-bg-series($bg__init,$classes_init);
+@include aoa-bg-series($bg__init,$classes_init);
 
 .comingsoon-s1{
     background-blend-mode: multiply;
@@ -8,4 +8,65 @@
 }
 .privacy-s1{
     background-blend-mode: multiply;
+}
+.contact,.about{
+    &-s3{
+        background-color: #999!important;
+        background-blend-mode: multiply!important;
+    }
+}
+.text{
+    &-shadow{
+        text-shadow: $text-shadow;
+    }
+}
+nav{
+    z-index: 10;
+}
+textarea{
+    resize: none;
+}
+
+@media all and (max-width: 767px){
+    .about{
+        &-s1{
+            *{
+                color: #333 !important;
+            }
+            background-color: #aaa!important;
+            background-blend-mode: overlay!important;
+            background-position: top center!important;
+        }
+    }
+    .contact{
+        &-s1{
+            *{
+                color: #333 !important;
+            }
+            background-color: #aaa!important;
+            background-blend-mode: overlay!important;
+            background-position: top center!important;
+        }
+    }
+    .index{
+        &-s1{
+            *{
+                color: #333 !important;
+            }
+            background-color: #aaa!important;
+            background-blend-mode: overlay!important;
+            background-position: bottom right!important;
+        }
+    }
+    .navbar{
+        &-nav{
+            *:hover{
+                opacity: 0.8;
+            }
+            background-color: #999!important;
+            border: 1px solid #666!important;
+            color: #333!important;
+            padding: 10px;
+        }
+    }
 }

@@ -3,6 +3,7 @@ import React,{Component} from "react";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import {paths} from "./config.js";
 import Footer from "./components/footer";
+import Navigation from "./components/navigation";
 
 class App extends Component{
   render(){
@@ -11,6 +12,7 @@ class App extends Component{
     });
     return(
       <BrowserRouter>
+        <Navigation menuItems={paths}/>
         <Routes>
           {routeContent}
         </Routes>
